@@ -4,32 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title> My First Website</title>
 </head>
 <body>
     <section class="header"> 
         <nav>
             <a href="index.html"><img src="Images/logo1.jpg"></a>
-            <div class="nav-links"> 
+            <div class="nav-links" id="navLinks"> 
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">BOOK</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">PLAN NOW</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">PROFILE</a></li>
                 </ul>
              </div> 
+             <i class="bi bi-list" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>planned</h1>
+            <h1 class="logo1"><b>planned</b></h1><br>
             <p>
-            <h3>The One Stop Events Shop</h3>
-            <h3>Planned provides all planning services under one roof</h3>
-            <h3>Hire grounds, cullinary services, photography services, entertainment and much more with planned.</h3>
-            </p>
+            <!-- <h4><b>The One Stop Events Shop</b></h3><br> -->
+            <h4>Planned provides all planning services under one roof.</h4>
+            <h4>Hire grounds, cullinary services, photography services, entertainment and much more with planned.</h4>
+            </p><br><br>
             <a href="about.html" class="hero-btn">Learn More</a>  
         </div>
     </section>
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
 
 </body>
 </html>
