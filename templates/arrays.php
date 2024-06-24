@@ -2,20 +2,20 @@
 
 <?php
     //indexed or numeric arrays
-    $fname = ["Alex", "Peter", "James"];
+    $fnames = ["Alex", "Peter", "James"];
     print_r ($fnames);
 
-    echo '<br>'
+    echo '<br>';
 
-    $colors = array("Black","Green","Yellow","White");
+    $colors = array("Black","Green","Yellow","White","Red","Blue","Red","Blue");
 
-    print_r($colors);
+    // print_r($colors);
 ?>
 
 <pre>
-    <?php var_dump($colors); ?>
+    <?php print_r($colors); ?>
 </pre>
-<?php print $names[1]; ?>
+<?php print $fnames[1]; ?>
 <?php
 // Associative arrays
 
@@ -27,7 +27,7 @@ $user = [
 
 ?>
 <pre>
-    <?php var_dump($user); ?>
+    <?php print_r($user); ?>
 </pre>
 
 <?php
@@ -39,8 +39,8 @@ $user_details = [
         "address" => "Mada",
         "phone" => [
             "Mobile" => "+254714130665",
-            "Work" => "+254714130665",
-            "Cell" => "+254714130665"
+            "Work" => "+254714156765",
+            "Cell" => "+254714130775"
         ]
         );
     "Manager" => array(
@@ -49,9 +49,9 @@ $user_details = [
             "email" => "AOkama@yahoo.com",
             "address" => "Mada",
             "phone" => [
-                "Mobile" => "+254714130665",
-                "Work" => "+254714130665",
-                "Cell" => "+254714130665"
+                "Mobile" => "+254714130865",
+                "Work" => "+2547141306659",
+                "Cell" => "+254714130465"
             ]
             ); 
     "Secretary" => array(
@@ -60,9 +60,9 @@ $user_details = [
             "email" => "AOkama@yahoo.com",
             "address" => "Mada",
             "phone" => [
-                "Mobile" => "+254714130665",
-                "Work" => "+254714130665",
-                "Cell" => "+254714130665"
+                "Mobile" => "+254714130765",
+                "Work" => "+254714130365",
+                "Cell" => "+254714130165"
             ]
             );
     ];
@@ -82,9 +82,9 @@ $user_details = [
     <?php 
         $age = [45, 42, 23];
 
-            $user_age = array_combine($user, $age);
+            $user_age = array_combine($fnames, $age);
 
-            $user_data = array_merge($user, $age);
+            $user_data = array_merge($fnames, $age);
     ?>
     <pre>
         <?php var_dump($user_age); ?>

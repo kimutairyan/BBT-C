@@ -1,0 +1,22 @@
+table{
+    border: solid 1px #373737;
+    width: 80%;
+    border-collapse: collapse;
+}
+td{
+    border: solid 1px #373737;
+    padding: 5px;
+    text-align: left;
+}
+th{
+    background-color: rgba(0, 0, 0, 90%);
+    color: rgba(255, 255, 255, 90%);
+    padding: 5px;
+    text-align: left;
+}
+tr:nth-child(odd){
+    background-color: bisque;
+}
+tr:hover{
+    background-color: rgb(243, 235, 225);
+}

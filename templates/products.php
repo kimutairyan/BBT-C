@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<?php include_once("templates/header.php");?>
+<?php include_once("templates/nav.php");?>
+<div class="header">
+    <h1>Our Products</h1>
+</div>
+        
+<div class="row">
+    <div class="content">
 
-@@ -15,5 +16,45 @@ <h1>About Me</h1>
+    <h1>Our Products</h1>
+    <p>Lorem ipsum dolor sit amet, laborum</p>
 
-    <h2>Teaching</h2>
-    <img src="images/people/yankrukov.jpg" width="40%" alt="">
 
     <table>
         <tr>
@@ -52,6 +48,7 @@
             <td>4860 Ksh</td>
         </tr>
     </table>
-
-</body>
-</html>
+</div>
+<?php include_once("templates/side_bar.php");?>
+        </div>      
+        <?php include_once("templates/footer.php");?>
